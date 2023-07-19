@@ -1,0 +1,88 @@
+.container {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.App {
+    color: #fff;
+    margin-top: 100px;
+}
+
+.form {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.form__input {
+    width: 75%;
+    padding: 8px 15px;
+    border-radius: 4px;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form__input::placeholder {
+    font-size: 18px;
+}
+
+.form__btn {
+    width: 20%;
+    border-radius: 4px;
+    text-align: center;
+    background: orange;
+    color: #2b2c46;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.filter {
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__btn {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.filter__active {
+    color: brown;
+}
+
+
+.todo__list {
+    padding: 20px 0;
+}
+
+.todo__item {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    color: #2b2c46;
+    padding: 10px 15px;
+    height: 44px;
+    border-radius: 4px;
+}
+
+.todo-item__text {
+    width: 100%;
+}
+
+.todo-item__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.todo-item__btn {
+    background: transparent;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+

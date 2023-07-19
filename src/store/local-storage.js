@@ -2,12 +2,12 @@ export const loadState = () => {
   try {
     const savedState = localStorage.getItem('state');
 
-    if(savedState === null) {
+    if (savedState === null) {
       return undefined;
     }
 
     return JSON.parse(savedState);
-  }catch (error) {
+  } catch (error) {
     return undefined;
   }
 }
@@ -15,8 +15,9 @@ export const loadState = () => {
 export const saveState = (state) => {
   try {
     const stateToBeSaved = JSON.stringify(state);
+
     localStorage.setItem('state', stateToBeSaved);
-  }catch (error) {
-    console.log(error)
+  } catch (error) {
+    console.error(error);
   }
 }

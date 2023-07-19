@@ -1,13 +1,21 @@
-import './App.css';
-import TodoList from './TodoList/TodoList'
+import {NewTodo} from './components/NewTodo'
+import {TodoList} from './components/TodoList'
+import {Filters} from './components/Filters';
 
-function App() {
+import "./index.css";
+import './style/Todo.css'
+
+
+export default function App() {
   return (
-    <div className="App">
-     <h1>TodoList</h1>
-      <TodoList/>
-    </div>
+      <div className="App">
+        <h1>Redux Todo</h1>
+        <div className="container">
+          <NewTodo />
+          <Filters />
+          <TodoList />
+        </div>
+
+      </div>
   );
 }
-
-export default App;

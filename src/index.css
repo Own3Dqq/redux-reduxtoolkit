@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,11 +11,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #282c34;
-  box-sizing: border-box;
-  color: #fff;
+  text-align: center;
+  background: #2b2c46;
 }
 
-ul, ol {
+ul {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+a, input, button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
