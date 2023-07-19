@@ -1,0 +1,62 @@
+@mixin somestyle
+    height: 33px
+    padding: 4px 15px
+    margin: 0
+    outline: none
+    border: none
+    border-radius: 4px
+
+
+.todo__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 30%
+    margin: 0 auto
+
+    .todo__input
+        width: 60%
+        @include somestyle
+
+    .todo__btn
+        @include somestyle
+        width: 30%
+        font-size: 16px
+        background: #ed981d
+        height: 41px
+        font-weight: 700
+        cursor: pointer
+
+
+.todo__list
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 600px
+    margin: 0 auto
+    padding: 20px
+
+.todo__item
+    display: flex
+    justify-content: space-between
+    border: 2px solid #3f3f44
+    width: 440px
+    border-radius: 4px
+    height: 45px
+    margin: 10px 0
+    align-items: center
+    padding: 7px 15px
+
+.todo-item__inner
+    min-width: 20%
+    display: flex
+    justify-content: space-between
+
+.todo-item__btn
+    outline: none
+    border: none
+    background: transparent
+    color: #fff
+    cursor: pointer
+    &:hover
+        color: orange

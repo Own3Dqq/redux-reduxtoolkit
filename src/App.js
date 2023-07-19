@@ -1,11 +1,11 @@
 import './App.css';
-import Counter from "./Counter/Counter";
+import TodoList from './TodoList/TodoList'
 
 function App() {
   return (
     <div className="App">
-     <h1>Counter Test</h1>
-      <Counter/>
+     <h1>TodoList</h1>
+      <TodoList/>
     </div>
   );
 }

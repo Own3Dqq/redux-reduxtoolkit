@@ -1,9 +1,9 @@
 import {combineReducers} from "redux";
-import counterReducer from "./reducers/reducers";
+import {todoReducer} from './todos/todos.reducers'
+import {filters} from "./filters/filter.reducers";
 
-
-const rootReducer = combineReducers({
-  counterReducer,
+export const rootReducer = combineReducers({
+  todoReducer,
+  filters,
 })
 
-export default rootReducer;

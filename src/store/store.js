@@ -1,7 +1,21 @@
 import {createStore} from "redux";
-import rootReducer from "./rootReducer";
+import {rootReducer} from "./rootReducer";
+import {loadState, saveState} from './local-storage';
+import {throttle} from "lodash";
 
-const store = createStore(rootReducer)
+export const configureStore = () => {
+  const persistedState = loadState();
 
-export default store
+  const store = createStore(
+      rootReducer,
+      persistedState,
+  )
 
+  store.subscribe(throttle(() => {
+    saveState({
+      todos: store.getState().todos,
+    });
+  }, 1000))
+
+  return store;
+};
